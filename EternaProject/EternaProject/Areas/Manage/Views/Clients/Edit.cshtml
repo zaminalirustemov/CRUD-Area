@@ -1,0 +1,13 @@
+﻿@model Clients
+
+<div class="container">
+    <h1>Edit Client</h1>
+    <form method="post">
+        <div class="mb-3">
+            <label asp-for="ImageUrl" class="form-label">ImageUrl</label>
+            <input asp-for="ImageUrl" class="form-control" placeholder="ImageUrl">
+            <span asp-validation-for="ImageUrl" style="color:red"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Edit</button>
+    </form>
+</div>
